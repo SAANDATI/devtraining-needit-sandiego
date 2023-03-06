@@ -2876,15 +2876,107 @@
           "isHero" : false,
           "isNonDestructive" : false,
           "styles" : { }
+        }, {
+          "elementId" : "view_record_button",
+          "elementLabel" : "View Record button",
+          "propertyValues" : {
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "secondary"
+            },
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "View Record",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Enter a label",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "clewvfkaawaabbjjpddffhheeigqhshggd",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.MODAL_SELECTED_RELAY_5fd11afb1b818d10b81fdce7cc4bcb15",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "modalId" : "[component-id$='next_needit_modal']",
+                    "showModal" : true,
+                    "displayOptions" : null,
+                    "bare" : true,
+                    "viewportElementId" : null,
+                    "viewportRoute" : null,
+                    "viewportFields" : null
+                  }
+                },
+                "sysId" : "1ca258ef2fd12110c9ce5d8b2799b628"
+              },
+              "operation" : null,
+              "targetId" : "clewvfkaawaabbjjqddffhheecsffjjjhhrff",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : null,
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "isNonDestructive" : false,
+          "styles" : { }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"my_next_needit_record","styles":{}}],
+            "items" : [{"element_id":"my_next_needit_record","styles":{}},{"element_id":"view_record_button","styles":{}}],
             "root" : null,
             "rules" : null,
-            "styles" : {"flex-direction":"column"},
+            "styles" : {"flex-direction":"row","align-items":"flex-end"},
             "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
             "type" : "flex"
           },
@@ -2924,6 +3016,659 @@
   "styles" : {
     "width" : "100%",
     "background" : "#A5C7D0"
+  }
+}, {
+  "elementId" : "view_record",
+  "elementLabel" : "View Record",
+  "propertyValues" : {
+    "headerLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Record number",
+        "comment" : ""
+      }
+    },
+    "content" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "The record form will go here",
+        "comment" : ""
+      }
+    },
+    "buttonLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Done",
+        "comment" : ""
+      }
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "preventDefaultAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "05d8b1515b230010b913cbd59b81c71a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "next_needit_modal",
+  "elementLabel" : "Next NeedIt modal",
+  "propertyValues" : {
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "bare" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "disableDismiss" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "9c2e3b0978b3250ef3081204f151026a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "header_1",
+      "elementLabel" : "Header 1",
+      "propertyValues" : {
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "next_needit_form_title",
+          "elementLabel" : "Next NeedIt Form Title",
+          "propertyValues" : {
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Next NeedIt Details",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "h2"
+            },
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : null,
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "isNonDestructive" : false,
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"element_id":"next_needit_form_title","styles":{}}],
+            "root" : null,
+            "rules" : null,
+            "styles" : {"flex-direction":"column"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "3.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    }, {
+      "elementId" : "body_1",
+      "elementLabel" : "Body 1",
+      "propertyValues" : {
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "next_needit_form",
+          "elementLabel" : "Next NeedIt Form",
+          "propertyValues" : {
+            "sections" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ {
+                "sysId" : "bf1d96e3c0a801640190725e63f8ac80",
+                "caption" : "example",
+                "captionDisplay" : "Example Section",
+                "rows" : [ [ {
+                  "fields" : [ "number", "caller_id", "category", "subcategory", "business_service", "service_offering", "cmdb_ci", "universal_request", "route_reason" ]
+                }, {
+                  "fields" : [ "contact_type", "state", "hold_reason", "impact", "urgency", "priority", "assignment_group", "assigned_to" ]
+                } ], [ {
+                  "fields" : [ "short_description", "description" ]
+                } ] ],
+                "id" : 0,
+                "label" : "Example Section",
+                "defaultSection" : false,
+                "expanded" : true
+              } ]
+            },
+            "fields" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "number" : {
+                  "name" : "number",
+                  "dictionary" : {
+                    "type" : "string",
+                    "dependentFieldLabel" : null,
+                    "dependentField" : null,
+                    "dependentTable" : null,
+                    "name" : "number",
+                    "label" : "Number",
+                    "fieldHint" : "",
+                    "canWrite" : true,
+                    "canRead" : true,
+                    "canCreate" : true,
+                    "internalType" : "string",
+                    "isMandatory" : false,
+                    "isEncrypted" : false,
+                    "encryptionContext" : "",
+                    "sys_readonly" : false,
+                    "attributes" : [ {
+                      "name" : "edge_encryption_enabled",
+                      "value" : "true"
+                    }, {
+                      "name" : "ignore_filter_on_new",
+                      "value" : "true"
+                    }, {
+                      "name" : "ts_weight",
+                      "value" : "50"
+                    } ]
+                  },
+                  "maxLength" : 40,
+                  "defaultRows" : null,
+                  "type" : "string",
+                  "label" : "Number",
+                  "visible" : true,
+                  "readonly" : false,
+                  "mandatory" : false,
+                  "dependentField" : null,
+                  "dependentTable" : null,
+                  "referringTable" : "incident",
+                  "referringRecordId" : "2bf7f3b4c7132010840c625788c260c9",
+                  "internalType" : "string",
+                  "value" : "EXAMPLE007",
+                  "displayValue" : "EXAMPLE007",
+                  "valuesList" : [ ],
+                  "display_value_list" : [ ],
+                  "isEncrypted" : false,
+                  "encryptionContext" : "",
+                  "sys_readonly" : false,
+                  "originalValue" : "INC0010059"
+                },
+                "caller_id" : {
+                  "name" : "caller_id",
+                  "dictionary" : {
+                    "type" : "reference",
+                    "dependentFieldLabel" : "Company",
+                    "dependentField" : "company",
+                    "dependentTable" : "core_company",
+                    "name" : "caller_id",
+                    "label" : "Caller",
+                    "fieldHint" : "Personwhoreportedorisaffectedbythisincident",
+                    "canWrite" : true,
+                    "canRead" : true,
+                    "canCreate" : true,
+                    "internalType" : "reference",
+                    "isMandatory" : false,
+                    "isEncrypted" : false,
+                    "encryptionContext" : "",
+                    "sys_readonly" : false,
+                    "attributes" : [ {
+                      "name" : "encode_utf8",
+                      "value" : "false"
+                    }, {
+                      "name" : "ref_contributions",
+                      "value" : "user_show_incidents"
+                    } ]
+                  },
+                  "reference" : "sys_user",
+                  "referenceQualifier" : null,
+                  "referenceKey" : null,
+                  "useReferenceQualifier" : "simple",
+                  "dependent" : "company",
+                  "dependentOnField" : "company",
+                  "refAutoCompleter" : null,
+                  "refAcOrderBy" : null,
+                  "refAcColumns" : null,
+                  "refAcColumnsSearch" : false,
+                  "refAcDisplayValue" : false,
+                  "refQualElements" : null,
+                  "refContributions" : "user_show_incidents",
+                  "isDynamicCreate" : false,
+                  "isReferenceScriptableTable" : false,
+                  "referenceError" : null,
+                  "type" : "reference",
+                  "label" : "Caller",
+                  "visible" : true,
+                  "readonly" : false,
+                  "mandatory" : true,
+                  "dependentField" : "company",
+                  "dependentTable" : "core_company",
+                  "referringTable" : "incident",
+                  "referringRecordId" : "2bf7f3b4c7132010840c625788c260c9",
+                  "internalType" : "reference",
+                  "value" : "",
+                  "displayValue" : null,
+                  "valuesList" : [ ],
+                  "display_value_list" : [ ],
+                  "messages" : [ ],
+                  "sys_readonly" : false,
+                  "declarativeUiActions" : [ {
+                    "name" : "open_record",
+                    "icon" : "circle-info-outline",
+                    "label" : "Open Record",
+                    "dependency" : "",
+                    "requiresValue" : true,
+                    "order" : 0,
+                    "conditions" : "",
+                    "actionType" : "uxf_client_action",
+                    "actionComponent" : "",
+                    "actionDispatch" : "REFERENCE_INFO_CLICK",
+                    "actionPayload" : "",
+                    "actionAttributes" : "",
+                    "groupBy" : false,
+                    "group" : "",
+                    "assignmentId" : "172e2043534310108135ddeeff7b12dd",
+                    "confirmationRequired" : false,
+                    "confirmationMessage" : "",
+                    "tooltip" : "Open Record",
+                    "modelConditions" : [ {
+                      "field" : "value",
+                      "operator" : "ISNOTEMPTY",
+                      "value" : "",
+                      "newQuery" : false,
+                      "or" : false
+                    }, {
+                      "field" : null,
+                      "operator" : "=",
+                      "value" : null,
+                      "newQuery" : false,
+                      "or" : false
+                    } ],
+                    "payloadMap" : [ {
+                      "name" : "referenceInfoClick@referencetable",
+                      "value" : "{{referenceTable}}"
+                    }, {
+                      "name" : "referenceInfoClick@sys_id",
+                      "value" : "{{value}}"
+                    }, {
+                      "name" : "referenceInfoClick@field",
+                      "value" : "{{fieldName}}"
+                    }, {
+                      "name" : "referenceInfoClick@table",
+                      "value" : "{{tableName}}"
+                    }, {
+                      "name" : "referenceInfoClick@name",
+                      "value" : "{{name}}"
+                    } ]
+                  }, {
+                    "name" : "ref_search",
+                    "icon" : "magnifying-glass-outline",
+                    "label" : "Search For Record",
+                    "dependency" : "",
+                    "requiresValue" : false,
+                    "order" : 0,
+                    "conditions" : "",
+                    "actionType" : "uxf_client_action",
+                    "actionComponent" : "",
+                    "actionDispatch" : "REF_SEARCH_REQUESTED",
+                    "actionPayload" : "",
+                    "actionAttributes" : "",
+                    "groupBy" : false,
+                    "group" : "",
+                    "assignmentId" : "c6542741ff13101035be517f793bf1bb",
+                    "confirmationRequired" : false,
+                    "confirmationMessage" : "",
+                    "tooltip" : "Search for record",
+                    "modelConditions" : [ {
+                      "field" : "readonly",
+                      "operator" : "=",
+                      "value" : "false",
+                      "newQuery" : false,
+                      "or" : false
+                    }, {
+                      "field" : null,
+                      "operator" : "=",
+                      "value" : null,
+                      "newQuery" : false,
+                      "or" : false
+                    } ],
+                    "payloadMap" : [ {
+                      "name" : "parentSysId",
+                      "value" : "{{recordSysId}}"
+                    }, {
+                      "name" : "encodedRecord",
+                      "value" : "{{encodedRecord}}"
+                    }, {
+                      "name" : "referenceField",
+                      "value" : "{{fieldName}}"
+                    }, {
+                      "name" : "fieldLabel",
+                      "value" : "{{label}}"
+                    }, {
+                      "name" : "serializedChanges",
+                      "value" : "{{serializedChanges}}"
+                    }, {
+                      "name" : "parentTable",
+                      "value" : "{{tableName}}"
+                    } ]
+                  } ],
+                  "originalValue" : ""
+                },
+                "short_description" : {
+                  "name" : "short_description",
+                  "dictionary" : {
+                    "type" : "string",
+                    "dependentFieldLabel" : null,
+                    "dependentField" : null,
+                    "dependentTable" : null,
+                    "name" : "short_description",
+                    "label" : "Short Description",
+                    "fieldHint" : "",
+                    "canWrite" : true,
+                    "canRead" : true,
+                    "canCreate" : true,
+                    "internalType" : "string",
+                    "isMandatory" : false,
+                    "isEncrypted" : false,
+                    "encryptionContext" : "",
+                    "sys_readonly" : false,
+                    "attributes" : [ {
+                      "name" : "edge_encryption_enabled",
+                      "value" : "true"
+                    }, {
+                      "name" : "knowledge_search",
+                      "value" : "true"
+                    }, {
+                      "name" : "no_truncate",
+                      "value" : "true"
+                    }, {
+                      "name" : "ts_weight",
+                      "value" : "10"
+                    } ]
+                  },
+                  "maxLength" : 160,
+                  "defaultRows" : null,
+                  "type" : "string",
+                  "label" : "Short Description",
+                  "visible" : true,
+                  "readonly" : false,
+                  "mandatory" : true,
+                  "dependentField" : null,
+                  "dependentTable" : null,
+                  "referringTable" : "incident",
+                  "referringRecordId" : "2bf7f3b4c7132010840c625788c260c9",
+                  "internalType" : "string",
+                  "value" : "",
+                  "displayValue" : null,
+                  "valuesList" : [ ],
+                  "display_value_list" : [ ],
+                  "isEncrypted" : false,
+                  "encryptionContext" : "",
+                  "sys_readonly" : false,
+                  "originalValue" : ""
+                }
+              }
+            },
+            "table" : {
+              "type" : "JSON_LITERAL",
+              "value" : "x_58872_needit_needit"
+            },
+            "relatedLists" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "sysId" : {
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "my_next_needit", "results", "0", "sys_id", "value" ]
+              }
+            },
+            "view" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "forcedViewName" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "isContextMenuHidden" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "isSectionMenuHidden" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "isFormOptionsHidden" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "isRemovePaddingLeft" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "isSectionTitleHidden" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "disableCollapse" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "config" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "serializedChanges" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ ]
+            },
+            "encodedRecord" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "isNewRecord" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "scrollableHost" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "inUiBuilder" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "inRecordPageTab" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "userSession" : {
+              "type" : "CONTEXT_BINDING",
+              "binding" : {
+                "address" : [ "user" ],
+                "category" : "session"
+              }
+            },
+            "formMessages" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ ]
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : null,
+          "definition" : {
+            "id" : "cdf8d604a3fda59e69ccd6dd407263d6",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "isNonDestructive" : false,
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"element_id":"next_needit_form","styles":{}}],
+            "root" : null,
+            "rules" : null,
+            "styles" : {"flex-direction":"column"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "3.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"element_id":"header_1","rules":null,"styles":{"display":"flex","flex-direction":"column"}},{"element_id":"body_1","rules":null,"styles":{"display":"flex","flex-direction":"column","flex-grow":1.5}}],
+        "root" : null,
+        "rules" : null,
+        "styles" : {"flex-direction":"column","gap":"var(--now-static-space--lg)"},
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
   }
 } ]</composition>
         <da_relay_models/>
@@ -3066,7 +3811,7 @@
   },
   "readEvaluationMode" : "EAGER"
 } ]</data>
-        <dispatched_events>270edb7b1b458d10b81fdce7cc4bcbea</dispatched_events>
+        <dispatched_events>1ca258ef2fd12110c9ce5d8b2799b628,270edb7b1b458d10b81fdce7cc4bcbea</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events>939cd0ed1b95c910a047ca641a4bcb6d</handled_events>
         <interactions/>
@@ -3127,7 +3872,19 @@
   "message" : "All",
   "comment" : ""
 }, {
+  "message" : "Caller",
+  "comment" : ""
+}, {
   "message" : "Closed NeedIts",
+  "comment" : ""
+}, {
+  "message" : "Done",
+  "comment" : ""
+}, {
+  "message" : "Enter a label",
+  "comment" : ""
+}, {
+  "message" : "Example Section",
   "comment" : ""
 }, {
   "message" : "Facilities",
@@ -3154,16 +3911,40 @@
   "message" : "NeedIts Needed This Month",
   "comment" : ""
 }, {
+  "message" : "Next NeedIt Details",
+  "comment" : ""
+}, {
+  "message" : "Number",
+  "comment" : ""
+}, {
+  "message" : "Open Record",
+  "comment" : ""
+}, {
   "message" : "Overdue NeedIts",
+  "comment" : ""
+}, {
+  "message" : "Record number",
   "comment" : ""
 }, {
   "message" : "Request type to view:",
   "comment" : ""
 }, {
+  "message" : "Search For Record",
+  "comment" : ""
+}, {
+  "message" : "Short Description",
+  "comment" : ""
+}, {
   "message" : "The NeedIt Experience",
   "comment" : ""
 }, {
+  "message" : "The record form will go here",
+  "comment" : ""
+}, {
   "message" : "View NeedIt records that need to be approved",
+  "comment" : ""
+}, {
+  "message" : "View Record",
   "comment" : ""
 }, {
   "message" : "View active NeedIt records",
@@ -3214,13 +3995,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-21 15:00:21</sys_created_on>
         <sys_id>5fd11afb1b818d10b81fdce7cc4bcb15</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_5fd11afb1b818d10b81fdce7cc4bcb15</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-28 18:23:17</sys_updated_on>
+        <sys_updated_on>2023-03-06 15:18:35</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
